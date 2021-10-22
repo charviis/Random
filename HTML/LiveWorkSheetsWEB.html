@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="cs" >
+<header>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title> Decent software </title>
+    <meta name="author" content="Decent software">
+
+	</header>
+
+<head>
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<meta http-equiv="refresh" content="60" >
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="refresh" content="300">
+<title>Liveworksheets.com - Student workbooks</title>
+
+
+<style>
+
+
+.capalogin {
+	width:300px;
+	height:300px;
+	position: fixed;
+	margin-right:auto;
+	margin-left:auto;
+	right:0;
+	left:0;
+	z-index: 200;
+	top:200px;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px #666666;
+}
+
+
+.enlace {
+text-decoration: none;
+color: #0066FF;
+}
+.enlace:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+
+.enlaceblanco {
+text-decoration: none;
+color: #FFFFFF;
+}
+.enlaceblanco:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+
+  .workbookcover {
+	border: 1px solid #666666;
+	border-radius: 3px;
+  	box-shadow: 3px 3px 3px #666666;
+  	height:340px;
+  	width:240px;
+  	position:absolute;
+  	top:0px;
+  	left:40px;
+  	cursor:pointer;
+  	
+}
+
+  .espiral {
+    height:340px;
+  	width:20px;
+  	position:absolute;
+  	top:0px;
+  	left:30px;
+  	overflow: hidden;
+}
+
+  .capacontenido {
+  	z-index: 0;
+  	position: relative;
+   	margin-left: auto;
+  	margin-right: auto;
+  	left: 0;
+  	right: 0;
+  	top: 0px;
+}
+
+.smallimage {
+	border: 1px solid #666666;
+	border-radius: 3px;
+  	box-shadow: 3px 3px 3px #666666;
+  	width:120px;
+  	cursor:pointer;
+  	max-height: 170px;
+  	
+}
+
+.commentslayer {
+display: none;
+position: absolute;
+width: 720px; 
+min-height: 200px; 
+z-index: 2; 
+margin-right:auto;
+margin-left:auto;
+right:0;
+left:0;
+top: 130px;
+background-color: #FFFFFF;
+border: 1px solid #666666;
+border-radius: 3px;
+box-shadow: 0px 0px 8px #666666;
+-moz-box-shadow: 0px 0px 8px #666666;
+-webkit-box-shadow: 0px 0px 8px #666666;
+}
+
+.pleasewaitlayer {
+top:50%;
+position: fixed;
+width: 200px; 
+height: 200px; 
+z-index: 360000; 
+margin-right:auto;
+margin-left:auto;
+right:0;
+left:0;
+margin-top:-100px;
+}
+
+  .worksheetpreview {
+	border: 1px solid #666666;
+	border-radius: 3px;
+  	box-shadow: 3px 3px 3px #666666;
+}
+
+</style>
+
+<script language="javascript">
+
+function ejecutaronload() {
+thisurl = window.location.href;
+separarurl = thisurl.split("liveworksheets.co");
+document.getElementById("linktospanish").href = "https://es.liveworksheets.co" + separarurl[1];
+document.getElementById("linktoenglish").href = "https://www.liveworksheets.co" + separarurl[1];
+	if (separarurl[0].indexOf("es.") > 0 ) {
+	document.getElementById("spanlinktospanish").innerHTML = "Español";
+	} else {
+	document.getElementById("spanlinktoenglish").innerHTML = "English";
+	}
+}
+
+var readcomments = "";
+var nosllegamosporelworkbook = "";
+var deberesmostrados = 0;
+var comentariosmostrados = 0;
+
+function mostrarcomments(){
+
+var elinnerhtml = '<img title="Close" src="https://files.liveworksheets.com/images/closewindow.png" style="position:absolute;top:5px;left:695px;cursor:pointer" onclick="cerrarcomentarios()">';
+
+
+
+		
+							elinnerhtml = elinnerhtml + '<p align="center"><font face="Arial" size="6"><b>Pending homework:</b></font></p><p>&nbsp;</p>';
+							elinnerhtml = elinnerhtml + '<div align="center"><table width="600px">';
+						 
+						elinnerhtml = elinnerhtml + '<tr>';
+						elinnerhtml = elinnerhtml + '<td width="110px" valign="top" align="left">';
+						elinnerhtml = elinnerhtml + '<img width="100px" src="https://files.liveworksheets.com/avatars/noavatar.jpg">';
+						elinnerhtml = elinnerhtml + '</td>';
+						elinnerhtml = elinnerhtml + '<td width="350px" valign="top" align="left">';
+						elinnerhtml = elinnerhtml + '<a class="enlace" href="workbook.asp?t=910510&studentworkbookid=2484232&clave=bilmeh38&timestamp=2021-4-22-11-46-28"><font face="Arial" size="3"><b>Comparatives/superlatives, Page&nbsp;4</b></font></a>';
+						elinnerhtml = elinnerhtml + '<br><br>';
+						elinnerhtml = elinnerhtml + '<font face="Arial" size="2"></font>';
+						elinnerhtml = elinnerhtml + '<br><br>';
+						elinnerhtml = elinnerhtml + '<font face="Arial" size="3" ><b>Time left:&nbsp;73h 44min &nbsp;</b></font>';
+						
+						elinnerhtml = elinnerhtml + '</td>';
+						elinnerhtml = elinnerhtml + '<td width="140px" valign="top" align="right">';
+						elinnerhtml = elinnerhtml + '<a href="workbook.asp?t=910510&studentworkbookid=2484232&clave=bilmeh38&timestamp=2021-4-22-11-46-28"><img class="worksheetpreview" src="https://files.liveworksheets.com/def_files/2021/1/21/10121160658427973/thumb10121160658427973.jpg" width="120px"></a>';
+						elinnerhtml = elinnerhtml + '</td>';
+						elinnerhtml = elinnerhtml + '</tr>';
+						elinnerhtml = elinnerhtml + '<tr><td colspan="3">';
+						elinnerhtml = elinnerhtml + '<hr width="100%">';
+						elinnerhtml = elinnerhtml + '</td></tr>';
+						deberesmostrados = deberesmostrados + 1;
+						
+			elinnerhtml = elinnerhtml + '</table></div>';
+			elinnerhtml = elinnerhtml + '<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>';
+		
+	document.getElementById("commentslayer").innerHTML = elinnerhtml;
+	document.getElementById("commentslayer").style.display = "block";
+
+}
+
+function savereadcomments() {
+
+document.getElementById("readcomments").value = '';
+document.getElementById("formulario").submit();
+
+}
+
+
+function cerrarcomentarios() {
+document.getElementById("commentslayer").style.display = "none";
+}
+
+
+function waitingstop() {
+document.getElementById("pleasewaitdiv").style.display = "none";
+}
+
+function sendconfirmationemail() {
+post('myaccount.asp', {send: 'confirmationemail'});
+}
+
+
+function post(path, params, method) {
+    method = method || "post"; // Set method to post by default if not specified.
+    // The rest of this code assumes you are not using a library.
+    // It can be made less wordy if you use one.
+    var form = document.createElement("form");
+    form.setAttribute("method", method);
+    form.setAttribute("action", path);
+
+    for(var key in params) {
+        if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+        }
+    }
+
+    document.body.appendChild(form);
+    form.submit();
+}
+</script>
+
+
+</head>
+
+<body onload="ejecutaronload(),mostrarcomments()" style="margin-top: 0px;">
+
+
+
+		
+		<div class="commentslayer" id="commentslayer" style="z-index:3"></div>
+
+
+
+<div align="center" class="capacontenido" style="position:relative;background-color:#FFFFFF;width:1000px;top:0px;min-height:1000px">
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="100%" align="left" valign="top" colspan="2">
+				<a href="https://www.liveworksheets.com/workbooks" title="Live Worksheets - homepage">
+					
+					<img id="wswo" class="qwertyuiopasdfghjklzxcvbnm" alt="Live Worksheets" src="https://files.liveworksheets.com/images/logostudentszone.png" border="0" width="300">
+					
+				</a>
+			</td>
+		</tr>
+		<tr bgcolor="#0a4073" height="30px">
+			<td width="50%" align="left">
+				<font face="Arial" size="2" color="#FFFFFF">&nbsp;&nbsp;<span id="spanlinktoenglish"><a class="enlaceblanco" href="https://www.liveworksheets.com" id="linktoenglish">
+				English</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="spanlinktospanish"><a class="enlaceblanco" href="https://es.liveworksheets.com" id="linktospanish">Español</a></span></font>
+			</td>
+			<td width="50%" align="right">
+				
+				<font face="Arial" color="#FFFFFF" style="font-size: 11pt"><b><a class="enlaceblanco" href="myaccount.asp">Marek Charvát</a></b>&nbsp;&nbsp;&nbsp;<a class="enlaceblanco" href="index.asp?logout=true">Log out</a>&nbsp;&nbsp;</font>
+				
+			</td>
+		</tr>
+		<tr>
+			<td width="100%" align="center" valign="top" colspan="2">
+				&nbsp;
+			</td>
+		</tr>
+	</table>
+
+
+
+
+	<p>&nbsp;</p>
+	<p align="center">
+	<font face="Arial" size="6">My workbooks:</font>
+	</p>
+	
+					<table border="0" width="1000px" cellspacing="0" cellpadding="0">
+					<tr>
+					
+					<td width="33%" align="center" valign="middle">
+						<table border="0" width="333px" cellspacing="5" cellpadding="0">
+						<tr>
+						<td align="center" valign="middle">
+							<div style="position:relative;width:333px;height:340px">
+								<div onclick="window.location.href='workbook.asp?t=910510&studentworkbookid=2484232&timestamp=2021-4-22-11-46-28'" title="Comparatives/superlatives"  class="workbookcover" style="background-image: url('https://files.liveworksheets.com/def_files/workbookcovers/1032822284291051010001009534small.jpg')" >
+									<table width="100%" height="100%" align="center"><tr><td valign="middle" align="center">
+									<font face="Arial" size="5"><b></b></font>
+									</td></tr>
+									</table>
+								</div>
+								<div class="espiral">
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+									<img src="images/spiralmini.png"><br>
+									
+								</div>
+							</div>
+						</td>
+						</tr>
+						<tr>
+						<td align="center" valign="top">
+						</td></tr>
+						</table>
+					
+					</td>
+										
+				
+		<td width="33%" valign="top">&nbsp;</td>
+		<td width="33%" valign="top">&nbsp;</td>
+									
+		</table>
+	
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<form method="post" id="formulario">
+	<input type="hidden" name="readcomments" id="readcomments" value="">
+	</form>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2079983-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
